@@ -442,6 +442,7 @@ p { margin: 0 0 1em; }
 /* ====== Sections ====== */
 .section { padding: clamp(60px, 10vh, 120px) var(--pad-x); position: relative; background-color: var(--bg); }
 .section--about { padding-bottom: clamp(120px, 20vh, 240px); }
+.section--form  { padding-bottom: 360px; }
 .section__inner { max-width: var(--maxw); margin: 0 auto; }
 .two-col {
   display: grid;
