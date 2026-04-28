@@ -236,7 +236,7 @@ p { margin: 0 0 1em; }
   font-family: var(--font-body);
   font-size: clamp(20px, 2.5vw, 36px);
   padding: 14px 0;
-  animation: marquee 32s linear infinite;
+  animation: marquee 18s linear infinite;
 }
 .announce__track span { flex-shrink: 0; }
 @keyframes marquee {
