@@ -754,6 +754,9 @@ p { margin: 0 0 1em; }
     margin-bottom: 80px;
   }
 
+  /* Footer nicht ins About-Section reinschieben auf Mobile */
+  .site-footer { margin-top: 0; }
+
   /* Footer-Spalten untereinander */
   .site-footer__cols {
     flex-direction: column;
