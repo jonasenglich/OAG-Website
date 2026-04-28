@@ -494,7 +494,6 @@ p { margin: 0 0 1em; }
 .site-footer {
   background: var(--ink); color: var(--bg);
   padding: 60px var(--pad-x) 24px;
-  margin-top: -600px;
 }
 .site-footer__social {
   max-width: var(--maxw); margin: 60px auto 0;
