@@ -308,8 +308,7 @@ p { margin: 0 0 1em; }
   top: 0;
   background-image: url('Ebene 2.png');
   background-position: top right;
-  background-color: var(--bg);
-  background-blend-mode: multiply;
+  mix-blend-mode: multiply;
 }
 .deco--e3 {
   width: min(34%, 380px);
@@ -319,8 +318,7 @@ p { margin: 0 0 1em; }
   transform: translateY(-50%);
   background-image: url('Ebene 3.png');
   background-position: center;
-  background-color: var(--orange);
-  background-blend-mode: multiply;
+  mix-blend-mode: multiply;
   opacity: 0.5;
 }
 .deco--e4 {
@@ -330,8 +328,7 @@ p { margin: 0 0 1em; }
   margin-top: -8px;
   background-image: url('Ebene 4.png');
   background-position: center;
-  background-color: var(--bg);
-  background-blend-mode: multiply;
+  mix-blend-mode: multiply;
 }
 .eyebrow {
   font-family: var(--font-body);
