@@ -774,9 +774,6 @@ p { margin: 0 0 1em; }
   .lcc-logo { width: 72px; }
   .juz-logo { width: 48px; }
 
-  /* Weniger Abstand zwischen Text und Teambild auf Über-uns-Seite */
-  .artikel__body { padding-bottom: 60px; }
-
   /* #openartfestival + Icons untereinander, Schrift kleiner */
   .site-footer__social {
     flex-direction: column;
