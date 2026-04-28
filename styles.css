@@ -628,8 +628,8 @@ p { margin: 0 0 1em; }
   position: absolute;
   left: 0;
   top: 50%;
-  transform: translate(-28%, -50%);
-  width: clamp(120px, 16vw, 220px);
+  transform: translate(-40%, -50%);
+  width: clamp(220px, 28vw, 420px);
   aspect-ratio: 4 / 5;
   z-index: 2;
   background-image: url('Ebene 4.png');
@@ -645,8 +645,8 @@ p { margin: 0 0 1em; }
   position: absolute;
   right: 0;
   top: 50%;
-  transform: translate(28%, -50%);
-  width: clamp(120px, 16vw, 220px);
+  transform: translate(40%, -50%);
+  width: clamp(220px, 28vw, 420px);
   aspect-ratio: 4 / 5;
   z-index: 2;
   background-image: url('Ebene 2.png');
@@ -657,6 +657,10 @@ p { margin: 0 0 1em; }
   background-blend-mode: multiply;
   pointer-events: none;
   user-select: none;
+}
+@media (max-width: 768px) {
+  .deco--team-l { transform: translate(-60%, -50%); }
+  .deco--team-r { transform: translate(60%, -50%); }
 }
 .team-photo-wrap {
   background-color: var(--bg);
