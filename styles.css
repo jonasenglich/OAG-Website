@@ -398,7 +398,7 @@ p { margin: 0 0 1em; }
 .section__title {
   font-size: clamp(40px, 6vw, 96px);
   text-transform: uppercase;
-  margin: 0 0 32px;
+  margin: 48px 0 48px;
 }
 .kuenstler__grid {
   display: grid;
