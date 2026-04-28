@@ -754,8 +754,9 @@ p { margin: 0 0 1em; }
     margin-bottom: 80px;
   }
 
-  /* Genug Abstand damit der Footer die About-Texte nicht überlappt */
-  .section--about { padding-bottom: 320px; }
+  /* Genug Abstand damit der Footer Texte nicht überlappt */
+  .section--about,
+  .artikel { padding-bottom: 320px; }
 
   /* Footer-Spalten untereinander */
   .site-footer__cols {
