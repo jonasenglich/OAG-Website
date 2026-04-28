@@ -632,8 +632,7 @@ p { margin: 0 0 1em; }
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: var(--bg);
-  background-blend-mode: multiply;
+  mix-blend-mode: multiply;
   pointer-events: none;
   user-select: none;
 }
@@ -649,8 +648,7 @@ p { margin: 0 0 1em; }
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: var(--bg);
-  background-blend-mode: multiply;
+  mix-blend-mode: multiply;
   pointer-events: none;
   user-select: none;
 }
