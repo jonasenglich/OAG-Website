@@ -725,6 +725,22 @@ p { margin: 0 0 1em; }
   text-transform: uppercase;
   margin: 40px 0 16px;
 }
+
+/* Legal-Seiten: nur h1 in Display-Schrift, h2 in Fließtextschrift */
+.artikel--legal .artikel__body h1 {
+  font-size: clamp(56px, 9vw, 110px);
+  text-transform: uppercase;
+  line-height: 0.88;
+  margin-bottom: 48px;
+}
+.artikel--legal .artikel__body h2 {
+  font-family: var(--font-body);
+  font-size: clamp(13px, 0.6vw + 10px, 17px);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin: 36px 0 8px;
+}
 .artikel__body p { max-width: 65ch; }
 
 /* ====== Mobile ====== */
