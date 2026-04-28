@@ -728,6 +728,43 @@ p { margin: 0 0 1em; }
 }
 .artikel__body p { max-width: 65ch; }
 
+/* ====== Mobile ====== */
+@media (max-width: 600px) {
+  /* Hero-Titel passt sonst nicht rein ("FESTIVAL" bricht über) */
+  .logo-text--xl {
+    font-size: clamp(44px, 16vw, 220px);
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
+
+  /* Footer-Spalten untereinander */
+  .site-footer__cols {
+    flex-direction: column;
+    gap: 28px;
+  }
+  .site-footer__cols .footer-col:not(:first-child) {
+    flex: 1 1 auto;
+  }
+
+  /* Partner-Logos kleiner */
+  .site-footer__partners {
+    gap: 20px;
+  }
+  .eu-logo  { width: 110px; }
+  .lcc-logo { width: 72px; }
+  .juz-logo { width: 48px; }
+
+  /* #openartfestival + Icons untereinander, Schrift kleiner */
+  .site-footer__social {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .social__hash {
+    font-size: clamp(22px, 7vw, 36px);
+  }
+}
+
 /* ====== Teilnahme-Seite ====== */
 .page-hero {
   padding: clamp(80px, 14vh, 160px) var(--pad-x) clamp(40px, 6vh, 80px);
