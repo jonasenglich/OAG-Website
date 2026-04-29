@@ -791,7 +791,7 @@ p { margin: 0 0 1em; }
 
 /* ====== Teilnahme-Seite ====== */
 .page-hero {
-  padding: clamp(80px, 14vh, 160px) var(--pad-x) clamp(40px, 6vh, 80px);
+  padding: clamp(80px, 14vh, 160px) var(--pad-x) calc(clamp(40px, 6vh, 80px) + 320px);
   max-width: var(--maxw);
   margin: 0 auto;
 }
