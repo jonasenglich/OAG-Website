@@ -32,25 +32,25 @@
          SEKTION 1: HERO — beige, großes Festival-Wortbild
          ====================================================== -->
     <tr>
-      <td style="background:#f1eeea; padding:22px 24px 10px 24px;">
+      <td style="background:#f1eeea; padding:0;">
+        <!-- position:relative + overflow:hidden → Scribble wird am unteren Rand abgeschnitten -->
+        <div style="position:relative; overflow:hidden; padding:32px 24px 18px 24px;">
 
-        <table width="100%" cellpadding="0" cellspacing="0" border="0">
-          <tr>
-            <!-- ALLE drei Wörter in EINER Zelle — Zeilenabstand nur durch line-height, nie wieder durch Tabellenzeilen -->
-            <td style="font-family:'Networkand','Permanent Marker',Impact,sans-serif;
-                       font-size:64px; font-weight:400; color:#111111;
-                       line-height:0.88; vertical-align:top; width:60%;">
-              OPEN<br>ART<br>FESTIVAL
-            </td>
-            <!-- Scribble rechts oben -->
-            <td style="vertical-align:top; text-align:right; width:40%;">
-              <img src="Ebene%202.png"
-                   alt="" width="240"
-                   style="display:block; width:240px; height:auto; margin-left:auto;
-                          mix-blend-mode:multiply; -webkit-mix-blend-mode:multiply;">
-            </td>
-          </tr>
-        </table>
+          <!-- Überschrift: normale Flusslayoout, bestimmt die Höhe der Box -->
+          <div style="font-family:'Networkand','Permanent Marker',Impact,sans-serif;
+                      font-size:64px; font-weight:400; color:#111111;
+                      line-height:0.88; width:60%;">
+            OPEN<br>ART<br>FESTIVAL
+          </div>
+
+          <!-- Scribble: absolut positioniert, ragt nach unten raus und wird abgeschnitten -->
+          <img src="Ebene%202.png"
+               alt="" width="310"
+               style="display:block; position:absolute; right:0; top:0;
+                      width:310px; height:auto;
+                      mix-blend-mode:multiply; -webkit-mix-blend-mode:multiply;">
+
+        </div>
       </td>
     </tr>
 
