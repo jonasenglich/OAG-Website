@@ -8,7 +8,7 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;400;900&display=swap');
     @font-face {
-      font-family: 'Network';
+      font-family: 'Networkand';
       src: url('https://www.openartgroup.de/NetworkFreeVersion.ttf') format('truetype');
       font-weight: 400 900;
     }
@@ -27,27 +27,27 @@
   <table width="600" cellpadding="0" cellspacing="0" border="0" align="center"
     style="max-width:600px; width:100%; border-collapse:collapse; margin:0 auto; background:#f1eeea; font-family:'Londrina Solid',sans-serif;">
 
-    <!-- Header: Logo links + Festivalname + Scribbles rechts -->
+    <!-- Header: Logo links (schwarz) + Festivalname rechts (dunkel) -->
     <tr>
-      <!-- Logo + gelbes Gekritzel -->
-      <td style="background:#f1eeea; padding:20px 12px 16px 24px; vertical-align:middle; width:45%;">
+      <!-- Logo invertiert auf schwarz -->
+      <td style="background:#000000; padding:22px 16px 18px 24px; vertical-align:middle; width:42%;">
         <img src="https://www.openartgroup.de/open%20art%20group%20(2).png"
           alt="Open Art Group" width="170"
-          style="display:block; width:170px; height:auto; margin-bottom:10px;">
+          style="display:block; width:170px; height:auto; filter:invert(1); margin-bottom:12px;">
         <img src="https://www.openartgroup.de/Ebene%202.png"
-          alt="" width="90"
-          style="display:block; width:90px; height:auto; margin-left:10px;">
+          alt="" width="80"
+          style="display:block; width:80px; height:auto; filter:invert(1); opacity:0.7; margin-left:8px;">
       </td>
 
-      <!-- Festivalname + Datum + oranges Auge-Gekritzel -->
-      <td style="background:#111111; padding:20px 20px 16px 20px; vertical-align:middle; width:55%; text-align:right;">
+      <!-- Festivalname + Datum + Auge-Scribble -->
+      <td style="background:#111111; padding:22px 22px 18px 18px; vertical-align:middle; width:58%; text-align:right;">
         <img src="https://www.openartgroup.de/Ebene%203.png"
-          alt="" width="70"
-          style="display:inline-block; width:70px; height:auto; margin-bottom:10px; opacity:0.85;">
-        <div style="font-family:'Londrina Solid',sans-serif; color:#f1eeea; font-size:11px; text-transform:uppercase; letter-spacing:0.14em; margin-bottom:8px; opacity:0.6;">
+          alt="" width="64"
+          style="display:inline-block; width:64px; height:auto; margin-bottom:10px;">
+        <div style="font-family:'Londrina Solid',sans-serif; color:#f1eeea; font-size:10px; text-transform:uppercase; letter-spacing:0.16em; margin-bottom:10px; opacity:0.55;">
           Kronach
         </div>
-        <div style="font-family:'Network','Permanent Marker',Impact,sans-serif; color:#f1eeea; font-size:26px; font-weight:400; text-transform:uppercase; letter-spacing:0.03em; line-height:0.95; margin-bottom:12px;">
+        <div style="font-family:'Networkand','Permanent Marker',Impact,sans-serif; color:#f1eeea; font-size:28px; font-weight:400; text-transform:uppercase; letter-spacing:0.02em; line-height:0.93; margin-bottom:14px;">
           Open Art<br>Festival 2026
         </div>
         <div style="font-family:'Londrina Solid',sans-serif; color:#ce4918; font-size:20px; font-weight:900; letter-spacing:0.06em;">
@@ -56,62 +56,89 @@
       </td>
     </tr>
 
-    <!-- Dünne Trennlinie -->
-    <tr>
-      <td colspan="2" style="background:#cccccc; height:1px; font-size:1px; line-height:1px;">&nbsp;</td>
-    </tr>
-
     <!-- Termine -->
     <tr>
-      <td colspan="2" style="padding:22px 24px 26px 24px; background:#f1eeea;">
+      <td colspan="2" style="padding:24px 26px 22px 26px; background:#f1eeea;">
 
         <div style="font-family:'Londrina Solid',sans-serif; font-size:11px; text-transform:uppercase; letter-spacing:0.18em; color:#ce4918; margin-bottom:16px; font-weight:900;">
-          — Termine
+          Termine
         </div>
 
-        <!-- Kick-Off -->
-        <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom:14px;">
-          <tr>
-            <td style="vertical-align:top; padding-right:12px; padding-top:5px; width:12px;">
-              <div style="width:9px; height:9px; background:#ce4918; border-radius:50%;"></div>
-            </td>
-            <td>
-              <div style="font-family:'Londrina Solid',sans-serif; font-size:12px; color:#111111; font-weight:900; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:2px;">
-                Kick-Off Festival-Planung
-              </div>
-              <div style="font-family:'Londrina Solid',sans-serif; font-size:16px; color:#111111; font-weight:400;">
-                06.05.2026, 18:00 Uhr
-              </div>
-              <div style="font-family:'Londrina Solid',sans-serif; font-size:14px; color:#666666; font-weight:300;">
-                Struwwelpeter Kronach
-              </div>
-            </td>
-            <!-- oranges Spiral-Gekritzel als Deko -->
-            <td style="vertical-align:middle; text-align:right; padding-left:8px; width:80px;">
-              <img src="https://www.openartgroup.de/Ebene%204.png"
-                alt="" width="70"
-                style="display:block; width:70px; height:auto; opacity:0.6; margin-left:auto;">
-            </td>
-          </tr>
-        </table>
-
-        <!-- Anmeldeschluss -->
         <table cellpadding="0" cellspacing="0" border="0" width="100%">
           <tr>
-            <td style="vertical-align:top; padding-right:12px; padding-top:5px; width:12px;">
-              <div style="width:9px; height:9px; background:#dfaf22; border-radius:50%;"></div>
+            <!-- Termine Liste -->
+            <td style="vertical-align:top;">
+
+              <!-- Kick-Off -->
+              <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom:16px;">
+                <tr>
+                  <td>
+                    <div style="font-family:'Londrina Solid',sans-serif; font-size:12px; color:#111111; font-weight:900; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:2px;">
+                      Kick-Off Festival-Planung
+                    </div>
+                    <div style="font-family:'Londrina Solid',sans-serif; font-size:17px; color:#111111; font-weight:400; line-height:1.2;">
+                      06.05.2026, 18:00 Uhr
+                    </div>
+                    <div style="font-family:'Londrina Solid',sans-serif; font-size:14px; color:#666666; font-weight:300;">
+                      Struwwelpeter Kronach
+                    </div>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Anmeldeschluss -->
+              <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                  <td>
+                    <div style="font-family:'Londrina Solid',sans-serif; font-size:12px; color:#111111; font-weight:900; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:2px;">
+                      Anmeldeschluss Open Art Festival
+                    </div>
+                    <div style="font-family:'Londrina Solid',sans-serif; font-size:17px; color:#111111; font-weight:400;">
+                      01.06.2026
+                    </div>
+                  </td>
+                </tr>
+              </table>
+
             </td>
-            <td>
-              <div style="font-family:'Londrina Solid',sans-serif; font-size:12px; color:#111111; font-weight:900; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:2px;">
-                Anmeldeschluss Open Art Festival
-              </div>
-              <div style="font-family:'Londrina Solid',sans-serif; font-size:16px; color:#111111; font-weight:400;">
-                01.06.2026
-              </div>
+
+            <!-- Spiral-Scribble als Deko -->
+            <td style="vertical-align:bottom; text-align:right; padding-left:12px; width:90px;">
+              <img src="https://www.openartgroup.de/Ebene%204.png"
+                alt="" width="80"
+                style="display:block; width:80px; height:auto; opacity:0.55; margin-left:auto;">
             </td>
           </tr>
         </table>
 
+      </td>
+    </tr>
+
+    <!-- Partner-Logos -->
+    <tr>
+      <td colspan="2" style="background:#f1eeea; padding:14px 26px 18px 26px; border-top:1px solid #d8d5d1;">
+        <div style="font-family:'Londrina Solid',sans-serif; font-size:9px; text-transform:uppercase; letter-spacing:0.16em; color:#999999; margin-bottom:12px; font-weight:400;">
+          Gefördert durch &amp; Partner
+        </div>
+        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+          <tr>
+            <td style="vertical-align:middle; text-align:left; padding-right:16px;">
+              <img src="https://www.openartgroup.de/DE_Co-fundedbytheEU_RGB_BLACK.png"
+                alt="Kofinanziert von der Europäischen Union" width="140"
+                style="display:block; width:140px; height:auto;">
+            </td>
+            <td style="vertical-align:middle; text-align:center; padding-right:16px;">
+              <img src="https://www.openartgroup.de/LCC.png"
+                alt="LCC" width="55"
+                style="display:block; width:55px; height:auto; margin:0 auto;">
+            </td>
+            <td style="vertical-align:middle; text-align:right;">
+              <img src="https://www.openartgroup.de/struwwel.png"
+                alt="JuZ Struwwelpeter Kronach" width="52"
+                style="display:block; width:52px; height:auto; margin-left:auto;">
+            </td>
+          </tr>
+        </table>
       </td>
     </tr>
 
@@ -125,12 +152,16 @@
       <td colspan="2" style="background:#111111; padding:14px 24px;">
         <table cellpadding="0" cellspacing="0" border="0" width="100%">
           <tr>
-            <!-- Instagram -->
+            <!-- Instagram mit SVG-Icon -->
             <td style="text-align:center; padding:0 5px;">
               <a href="https://www.instagram.com/open_art_group/"
                 target="_blank" rel="noopener noreferrer"
-                style="display:inline-block; color:#f1eeea; text-decoration:none; font-family:'Londrina Solid',sans-serif; font-size:13px; text-transform:uppercase; letter-spacing:0.1em; padding:7px 12px; border:1px solid rgba(241,238,234,0.3); border-radius:4px;">
-                &#128247;&nbsp; Instagram
+                style="display:inline-block; color:#f1eeea; text-decoration:none; font-family:'Londrina Solid',sans-serif; font-size:13px; text-transform:uppercase; letter-spacing:0.1em; padding:7px 12px; border:1px solid rgba(241,238,234,0.3); border-radius:4px; vertical-align:middle;">
+                <svg viewBox="0 0 36 36" width="16" height="16" fill="none" stroke="#f1eeea" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-right:5px; margin-bottom:1px;">
+                  <path d="M10,5.5 C7.2,5.1 5.1,7.3 5,10 L5,26 C4.9,28.8 7.1,31 10,31 L26,31 C28.8,31.1 31,28.9 31,26 L31,10 C31.1,7.2 28.9,5 26,5 Z"/>
+                  <circle cx="18" cy="18" r="6.5"/>
+                  <circle cx="26.5" cy="9.5" r="1.5" fill="#f1eeea" stroke="none"/>
+                </svg>Instagram
               </a>
             </td>
             <!-- Website -->
@@ -138,14 +169,14 @@
               <a href="https://www.openartgroup.de"
                 target="_blank" rel="noopener noreferrer"
                 style="display:inline-block; color:#f1eeea; text-decoration:none; font-family:'Londrina Solid',sans-serif; font-size:13px; text-transform:uppercase; letter-spacing:0.1em; padding:7px 12px; border:1px solid rgba(241,238,234,0.3); border-radius:4px;">
-                &#127760;&nbsp; Website
+                openartgroup.de
               </a>
             </td>
             <!-- Noch Fragen? -->
             <td style="text-align:center; padding:0 5px;">
               <a href="mailto:info@openartgroup.de"
                 style="display:inline-block; color:#dfaf22; text-decoration:none; font-family:'Londrina Solid',sans-serif; font-size:13px; text-transform:uppercase; letter-spacing:0.1em; padding:7px 12px; border:1px solid rgba(223,175,34,0.4); border-radius:4px;">
-                ✉&nbsp; Noch Fragen?
+                ✉ Noch Fragen?
               </a>
             </td>
           </tr>
