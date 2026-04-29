@@ -16,13 +16,19 @@
 
   <p class="preview-hint">Vorschau &amp; Signatur — Quellcode (Strg+U) in IONOS HTML-Editor einfügen.</p>
 
-  <!-- Networkand Schrift auch als Body-Style (falls Head gefiltert wird) -->
+  <!-- Schriften als Body-Style (überlebt IONOS Head-Stripping) -->
   <style>
     @font-face {
       font-family: 'Networkand';
       src: url('NetworkFreeVersion.ttf') format('truetype'),
            url('https://openartgroup.de/NetworkFreeVersion.ttf') format('truetype');
       font-weight: 400;
+      font-display: block;
+    }
+    @font-face {
+      font-family: 'Londrina Solid';
+      src: url('https://openartgroup.de/fonts/londrina-solid-300.woff2') format('woff2');
+      font-weight: 300;
       font-display: block;
     }
   </style>
