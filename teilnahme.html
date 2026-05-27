@@ -128,5 +128,18 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    let fileCount = 1;
+    document.getElementById('add-file').addEventListener('click', function() {
+      fileCount++;
+      const row = document.createElement('div');
+      row.className = 'file-row';
+      row.innerHTML = `
+        <input type="file" name="attachment${fileCount}" accept="image/jpeg,image/png,image/webp,application/pdf" />
+        <button type="button" class="file-remove" aria-label="Entfernen">✕</button>`;
+      row.querySelector('.file-remove').addEventListener('click', () => row.remove());
+      document.getElementById('file-inputs').appendChild(row);
+    });
+  </script>
 </body>
 </html>
