@@ -129,5 +129,50 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    const MAX_TOTAL_MB = 20;
+    const addBtn = document.getElementById('add-file');
+    const fileInputs = document.getElementById('file-inputs');
+    const sizeInfo = document.getElementById('file-size-info');
+
+    function updateSizeInfo() {
+      let total = 0;
+      fileInputs.querySelectorAll('input[type="file"]').forEach(i => {
+        [...(i.files || [])].forEach(f => total += f.size);
+      });
+      const mb = (total / 1024 / 1024).toFixed(1);
+      sizeInfo.textContent = total > 0 ? `Gesamt: ${mb} MB von ${MAX_TOTAL_MB} MB` : '';
+      sizeInfo.style.color = total > MAX_TOTAL_MB * 1024 * 1024 ? 'var(--orange)' : 'inherit';
+    }
+
+    function addFileRow() {
+      const row = document.createElement('div');
+      row.className = 'file-row';
+      row.innerHTML = `
+        <input type="file" name="attachment[]" accept="image/jpeg,image/png,image/webp,application/pdf" />
+        <button type="button" class="file-remove" aria-label="Entfernen">✕</button>`;
+      row.querySelector('.file-remove').addEventListener('click', () => {
+        row.remove();
+        updateSizeInfo();
+      });
+      row.querySelector('input').addEventListener('change', updateSizeInfo);
+      fileInputs.appendChild(row);
+    }
+
+    fileInputs.querySelector('input').addEventListener('change', updateSizeInfo);
+    addBtn.addEventListener('click', addFileRow);
+
+    document.querySelector('form').addEventListener('submit', function(e) {
+      let total = 0;
+      fileInputs.querySelectorAll('input[type="file"]').forEach(i => {
+        [...(i.files || [])].forEach(f => total += f.size);
+      });
+      if (total > MAX_TOTAL_MB * 1024 * 1024) {
+        e.preventDefault();
+        sizeInfo.textContent = `Zu groß! Bitte reduziere die Dateigröße auf max. ${MAX_TOTAL_MB} MB gesamt.`;
+        sizeInfo.style.color = 'var(--orange)';
+      }
+    });
+  </script>
 </body>
 </html>
