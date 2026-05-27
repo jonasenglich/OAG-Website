@@ -817,6 +817,17 @@ p { margin: 0 0 1em; }
   font-size: 1rem;
 }
 .form-grid textarea { min-height: 140px; resize: vertical; }
+.label--file { cursor: pointer; }
+.file-hint { font-size: 0.82rem; opacity: 0.6; margin-top: -2px; }
+.form-grid input[type="file"] {
+  padding: 10px 14px;
+  border: 2px dashed var(--ink);
+  border-radius: 12px;
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.form-grid input[type="file"]:hover { border-color: var(--orange); }
 .form-grid input:focus,
 .form-grid textarea:focus,
 .form-grid select:focus {
