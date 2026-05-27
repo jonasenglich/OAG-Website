@@ -63,17 +63,11 @@
         <label>Disziplin<input type="text" name="disziplin" placeholder="z.B. Musik, Performance, Malerei …" /></label>
         <label>Projektidee (kurz)<textarea name="idee" required placeholder="Worum geht es? Was brauchst Du?"></textarea></label>
         <label>Link zu Portfolio (optional)<input type="url" name="portfolio" placeholder="https://..." /></label>
-        <div class="label--file">
-          <span class="file-label-text">Bilder / Arbeitsproben (optional)</span>
-          <span class="file-hint">JPG, PNG oder PDF · max. 20 MB gesamt</span>
-          <div id="file-inputs">
-            <div class="file-row">
-              <input type="file" name="attachment[]" accept="image/jpeg,image/png,image/webp,application/pdf" />
-            </div>
-          </div>
-          <button type="button" class="btn btn--ghost btn--sm" id="add-file">+ Weitere Datei hinzufügen</button>
-          <p class="file-size-info" id="file-size-info"></p>
-        </div>
+        <label>
+          Arbeitsproben (optional)
+          <span class="file-hint">Lade deine Bilder auf Google Drive, WeTransfer oder Dropbox hoch und füge den Link hier ein.</span>
+          <input type="url" name="arbeitsproben" placeholder="https://drive.google.com/... oder wetransfer.com/..." />
+        </label>
         <div><button type="submit" class="btn btn--primary">Bewerbung absenden</button></div>
       </form>
     </div>
