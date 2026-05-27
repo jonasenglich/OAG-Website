@@ -53,26 +53,16 @@
     <div class="section__inner">
 <p class="section__sub">Fülle das Formular aus oder schreib uns direkt an <a href="mailto:info@openartgroup.de" class="link-arrow">info@openartgroup.de</a>.</p>
 
-      <form class="form-grid" name="bewerbung" method="POST" action="https://formsubmit.co/info@openartgroup.de" enctype="multipart/form-data">
-        <input type="hidden" name="_subject" value="Neue Bewerbung — Open Art Festival 2026" />
-        <input type="hidden" name="_next" value="https://www.openartgroup.de/danke.html" />
-        <input type="hidden" name="_captcha" value="false" />
-        <input type="text" name="_honey" style="display:none" />
+      <form class="form-grid" name="bewerbung" method="POST" action="https://api.web3forms.com/submit">
+        <input type="hidden" name="access_key" value="042c4eb6-f872-4a74-b758-7239eb39140c" />
+        <input type="hidden" name="subject" value="Neue Bewerbung — Open Art Festival 2026" />
+        <input type="hidden" name="redirect" value="https://www.openartgroup.de/danke.html" />
+        <input type="checkbox" name="botcheck" style="display:none" />
         <label>Name / Kollektiv<input type="text" name="name" required /></label>
         <label>E-Mail<input type="email" name="email" required /></label>
         <label>Disziplin<input type="text" name="disziplin" placeholder="z.B. Musik, Performance, Malerei …" /></label>
         <label>Projektidee (kurz)<textarea name="idee" required placeholder="Worum geht es? Was brauchst Du?"></textarea></label>
         <label>Link zu Portfolio (optional)<input type="url" name="portfolio" placeholder="https://..." /></label>
-        <div class="file-upload-group">
-          <span class="file-upload-label">Bilder / Arbeitsproben (optional)</span>
-          <span class="file-hint">JPG, PNG oder PDF</span>
-          <div id="file-inputs">
-            <div class="file-row">
-              <input type="file" name="attachment" accept="image/jpeg,image/png,image/webp,application/pdf" />
-            </div>
-          </div>
-          <button type="button" class="btn btn--ghost btn--sm" id="add-file">+ Weitere Datei</button>
-        </div>
         <div><button type="submit" class="btn btn--primary">Bewerbung absenden</button></div>
       </form>
     </div>
