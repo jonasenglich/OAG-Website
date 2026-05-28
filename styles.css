@@ -526,6 +526,7 @@ p { margin: 0 0 1em; }
 .eu-logo {
   width: 160px; height: auto;
   display: block;
+  filter: brightness(0) invert(1);
 }
 .lcc-logo {
   width: 100px; height: auto;
