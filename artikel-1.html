@@ -140,5 +140,17 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+  document.querySelectorAll('.artikel__gallery-grid img').forEach(function(img) {
+    img.addEventListener('click', function() {
+      var lb = document.getElementById('lightbox');
+      lb.querySelector('img').src = this.src;
+      lb.classList.add('is-active');
+    });
+  });
+  document.getElementById('lightbox').addEventListener('click', function() {
+    this.classList.remove('is-active');
+  });
+  </script>
 </body>
 </html>
