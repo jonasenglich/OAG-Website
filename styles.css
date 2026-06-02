@@ -751,6 +751,65 @@ p { margin: 0 0 1em; }
 }
 .artikel__body p { max-width: 65ch; }
 
+/* ====== Artikel Inline-Bild (nach erster Überschrift) ====== */
+.artikel__inline-img {
+  width: 100%;
+  border-radius: 14px;
+  border: 2px solid var(--ink);
+  margin: 24px 0 40px;
+}
+
+/* ====== Artikel Bildergalerie ====== */
+.artikel__gallery {
+  margin: 48px 0 40px;
+}
+.artikel__gallery-title {
+  font-size: clamp(28px, 3vw, 48px);
+  text-transform: uppercase;
+  margin: 0 0 20px;
+}
+.artikel__gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+}
+.artikel__gallery-grid img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid var(--ink);
+  background: var(--paper);
+  cursor: pointer;
+  transition: transform .3s var(--ease), box-shadow .3s var(--ease);
+}
+.artikel__gallery-grid img:hover {
+  transform: translateY(-3px);
+  box-shadow: 4px 4px 0 var(--orange);
+}
+
+/* Lightbox */
+.lightbox {
+  position: fixed; inset: 0;
+  z-index: 200;
+  background: rgba(0,0,0,.88);
+  display: flex; align-items: center; justify-content: center;
+  cursor: zoom-out;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s var(--ease);
+}
+.lightbox.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.lightbox img {
+  max-width: 92vw;
+  max-height: 90vh;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
 /* ====== Mobile ====== */
 @media (max-width: 600px) {
   /* Hero-Titel passt sonst nicht rein ("FESTIVAL" bricht über) */
