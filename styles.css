@@ -751,6 +751,12 @@ p { margin: 0 0 1em; }
   margin: 40px 0 10px;
 }
 .artikel__body p { max-width: 65ch; }
+.anmelde-link {
+  color: var(--orange);
+  text-decoration: underline;
+  font-weight: 600;
+}
+.anmelde-link:hover { opacity: 0.8; }
 
 /* ====== Artikel Inline-Bild (nach erster Überschrift) ====== */
 .artikel__inline-img {
