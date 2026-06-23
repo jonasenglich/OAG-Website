@@ -426,10 +426,11 @@ p { margin: 0 0 1em; }
   border: 2px solid var(--ink);
   background: var(--bg);
 }
-.k-card__img--1 { background: url('urban sketching 6.webp') center top / cover no-repeat; }
+.k-card__img--1 { background: url('Fotos/urban%20sketching%206.webp') center top / cover no-repeat; }
 .k-card__img--2 { background: url('open art group 3.webp') center top / cover no-repeat; }
-.k-card__img--3 { background: url('collage workshop1.webp') center top / cover no-repeat; }
-.k-card__img--4 { background: url('US2-5.webp') center top / cover no-repeat; }
+.k-card__img--3 { background: url('Fotos/collage%20workshop1.webp') center top / cover no-repeat; }
+.k-card__img--4 { background: url('Fotos/US2-5.webp') center top / cover no-repeat; }
+.k-card__img--5 { background: url('Plakat%20OAG%20Freies%20Zeichnen%20Lieblingseck%20teil2.png') center top / cover no-repeat; }
 .k-card__tag { display: none; }
 .k-card h4 {
   font-size: clamp(22px, 2vw, 32px);
